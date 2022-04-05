@@ -10,5 +10,4 @@ function Story() {
         </div>
     )
 }
-
 export default Story;
