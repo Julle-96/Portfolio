@@ -10,9 +10,11 @@ import { IconContext } from 'react-icons';
 
 
 function Nav() {
+
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
+
 
     return (
         <>
@@ -21,6 +23,14 @@ function Nav() {
                     <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
+                    <div>
+                        <a href="https://www.linkedin.com/in/julius-albiz-65b1a2172/" target="_blank" rel="noreferrer">
+                            <AiIcons.AiOutlineLinkedin size={30} className="nav-icons" />
+                        </a>
+                        <a href="https://github.com/Julle-96" target="_blank" rel="noreferrer">
+                            <AiIcons.AiOutlineGithub size={30} className="nav-icons" />
+                        </a>
+                    </div>
                 </div>
                 <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items" onClick={showSidebar}>
@@ -43,26 +53,7 @@ function Nav() {
                 </nav></IconContext.Provider>
         </>
     )
-    /*
-    return (
-        <nav>
-            <Link style={navStyle} to='/'>
-                <div className='home-button'>
-
-                    <h2>Home</h2>
-                </div>
-            </Link>
-            <ul className="nav-links">
-                <Link style={navStyle} to='/work'>
-                    <li className="nav-button">Work Life</li>
-                </Link>
-                <Link style={navStyle} to='/projects'>
-                    <li className="nav-button">Projects</li>
-                </Link>
-            </ul>
-        </nav>
-    )
-    */
 }
 
 export default Nav;
+

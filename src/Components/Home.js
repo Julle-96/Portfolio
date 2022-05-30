@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-
 
 
 function Home() {
@@ -12,12 +10,19 @@ function Home() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="Home">
-            <h3>
+            <div className="home-text">
+                <h3>
 
-                <br></br>Years of working service in the restaurant business
-                <br></br>+ a Master of Science degree to become a service minded UX designer
-            </h3>
-            <a className="resume" href='resume/resume.pdf' download>Download Resume</a>
+                    <br></br>Hi there! I'm Julius, a service minded UX Designer and Frontend Developer
+                    <br></br>Nice to meet you!
+
+                </h3>
+                <p>Welcome to my portfolio I have coded using React JS!</p>
+                <a className="resume" href='resume/resume.pdf' download>Download Resume</a>
+            </div>
+
+            <img className="home-image" src="/resources/home.jpg" alt="project"></img>
+
         </motion.div>
     )
 }

@@ -1,13 +1,22 @@
 nav {
     top: 0%;
+    position: absolute;
 }
 
 .navbar {
     background-color: #060b26;
     height: 12vh;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+
+}
+
+.nav-icons {
+    margin-right: 1vw;
 }
 
 .menu-bars {
@@ -37,7 +46,7 @@ nav {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 5vh 3vw 1vh 1vw;
+    padding: 6vh 3vw 1vh 1vw;
     list-style: none;
     height: 5vh;
 }
@@ -73,5 +82,6 @@ nav {
 
 span {
     margin-left: 1vw;
+
 
 }
