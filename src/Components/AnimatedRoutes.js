@@ -2,9 +2,11 @@ import React from 'react';
 import About from './About';
 import Projects from './Projects';
 import Home from './Home';
+import Contact from './Contact';
 import Baronnect from './projects/Baronnect';
 import Hjoy from './projects/Hjoy';
 import Metaweb from './projects/Metaweb';
+
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
@@ -21,6 +23,7 @@ function AnimatedRoutes() {
                 <Route path="/baronnect" component={Baronnect} />
                 <Route path="/hjoy" component={Hjoy} />
                 <Route path="/metaweb" component={Metaweb} />
+                <Route path="/contact" component={Contact} />
             </Switch>
         </AnimatePresence>
     )

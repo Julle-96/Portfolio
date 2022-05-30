@@ -8,13 +8,13 @@ export const SidebarData = [
     {
         title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillHome />,
+        icon: <AiIcons.AiOutlineHome />,
         cName: 'nav-text'
     },
     {
         title: 'Projects',
         path: '/projects',
-        icon: <AiIcons.AiFillProject />,
+        icon: <AiIcons.AiOutlineProject />,
         cName: 'nav-text'
     },
     {
@@ -24,7 +24,7 @@ export const SidebarData = [
         cName: 'nav-text'
     }, {
         title: 'Contact',
-        path: '/',
+        path: '/contact',
         icon: <AiIcons.AiOutlineMessage />,
         cName: 'nav-text'
     },
